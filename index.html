@@ -19,8 +19,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Sophie Micand Coaching",
-    "url": "https://tonPseudo.github.io/sophie-micand-site/",
-    "logo": "https://tonPseudo.github.io/sophie-micand-site/assets/feuille.jpg",
+    "url": "https://coachdevie.github.io/coachdevie/",
+    "logo": "https://coachdevie.github.io/coachdevie/assets/feuille.jpg",
     "sameAs": [
       "https://www.facebook.com/people/Sophie-Micand/pfbid0jmBnsoo59hCQt9dGwsAkJjXqfNPzJmEMTVNQS24K5Ck3XB5UchnBejtRaS2TP4wbl/"
     ],
@@ -94,14 +94,13 @@
       vers l’avenir qui vous permettra de vous épanouir personnellement. Les séances se
       placent sous le signe de l’écoute et de la bienveillance pour repartir avec une note
       positive et constructive.
-      <br /><br />
-      <em>Publié le 20 mai 2025</em>
     </p>
   </section>
 
   <!-- ===== “Témoignages” (défilement gauche→droite) ===== -->
   <section id="temoignages" class="temoignages">
     <h2>Témoignages</h2>
+    <button id="toggle-marquee" class="btn btn-secondary">Pause</button>
     <div class="temoignages-container">
       <div class="temoignages-marquee">
         <div class="temoignage-item">
@@ -126,9 +125,6 @@
         </div>
       </div>
     </div>
-    <p style="text-align: right; font-size: 0.9rem; margin-top: 1rem;">
-      <em>Publié le 13 mai 2025</em>
-    </p>
   </section>
 
   <!-- ===== “Spécialiste de l’adolescence” ===== -->
@@ -142,8 +138,6 @@
       donnant les clés vers un nouvel équilibre, pour qu’ils reprennent confiance en eux
       et utilisent leurs potentiels. Je m’engage à vous accompagner jusqu’au bout dans la
       voie qui vous permettra de retrouver vos marques.
-      <br /><br />
-      <em>Publié le 13 mai 2025</em>
     </p>
   </section>
 
@@ -172,9 +166,9 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <p>
-      © 2025 – Sophie Micand •
-      <a href="mailto:somicoachdevie@gmail.com">somicoachdevie@gmail.com</a> •
-      07 43 28 18 25 •
+      © 2025 – Sophie Micand • 
+      <a href="mailto:somicoachdevie@gmail.com">somicoachdevie@gmail.com</a> • 
+      07 43 28 18 25 • 
       <a
         href="https://www.facebook.com/people/Sophie-Micand/pfbid0jmBnsoo59hCQt9dGwsAkJjXqfNPzJmEMTVNQS24K5Ck3XB5UchnBejtRaS2TP4wbl/"
         target="_blank"
@@ -184,5 +178,40 @@
       17 La Croix du Four, 22170 Plouagat
     </p>
   </footer>
+
+  <!-- ===== JavaScript pour le bouton Pause/Play des témoignages ===== -->
+  <script>
+    (function() {
+      const marquee = document.querySelector('.temoignages-marquee');
+      const btn = document.getElementById('toggle-marquee');
+      let isPaused = false;
+
+      // Mettre en pause quand la souris survole la zone
+      document.querySelector('.temoignages').addEventListener('mouseenter', () => {
+        marquee.style.animationPlayState = 'paused';
+        btn.textContent = 'Play';
+        isPaused = true;
+      });
+      document.querySelector('.temoignages').addEventListener('mouseleave', () => {
+        if (!isPaused) return;
+        marquee.style.animationPlayState = 'running';
+        btn.textContent = 'Pause';
+        isPaused = false;
+      });
+
+      // Bouton Pause/Play
+      btn.addEventListener('click', () => {
+        if (marquee.style.animationPlayState === 'paused' || isPaused) {
+          marquee.style.animationPlayState = 'running';
+          btn.textContent = 'Pause';
+          isPaused = false;
+        } else {
+          marquee.style.animationPlayState = 'paused';
+          btn.textContent = 'Play';
+          isPaused = true;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
