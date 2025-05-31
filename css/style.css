@@ -153,11 +153,13 @@ body {
 .temoignages-marquee {
   display: flex;
   gap: 4rem;
-  animation: scrollRight 15s linear infinite;
+  animation: scrollRight 45s linear infinite;
+  animation-play-state: running;
 }
 .temoignage-item {
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 1rem;
 }
 .temoignage-item p {
   font-size: 1rem;
