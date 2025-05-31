@@ -3,12 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coaching de vie – Sophie Micand</title>
+  <title>Coaching adolescent & parental – Sophie Micand</title>
+  <meta name="description" content="Coach certifiée en accompagnement d'adolescents et de leurs parents. Renforcement de la confiance en soi, orientation, estime de soi, soutien familial. 15 ans d'expérience." />
+  <meta name="keywords" content="coaching adolescent, confiance en soi, orientation, soutien parents, coach de vie" />
+
+  <!-- Fichier CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
-    rel="stylesheet"
-  />
+
+  <!-- Police Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Données structurées (Schema.org) pour SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sophie Micand Coaching",
+    "url": "https://tonPseudo.github.io/sophie-micand-site/",
+    "logo": "https://tonPseudo.github.io/sophie-micand-site/assets/hero.jpg",
+    "sameAs": [
+      "https://www.facebook.com/people/Sophie-Micand/pfbid0jmBnsoo59hCQt9dGwsAkJjXqfNPzJmEMTVNQS24K5Ck3XB5UchnBejtRaS2TP4wbl/"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "somicoachdevie@gmail.com",
+      "telephone": "+33743281825"
+    },
+    "description": "Coach certifiée en accompagnement d'adolescents et de leurs parents. Renforcement de la confiance en soi, orientation, estime de soi, soutien familial. 15 ans d'expérience."
+  }
+  </script>
 </head>
 <body>
   <!-- ===== HEADER / NAVIGATION ===== -->
@@ -44,51 +68,65 @@
   <!-- ===== SERVICES (“Ce que je propose”) ===== -->
   <section id="services" class="section">
     <h2>Accompagnement personnalisé</h2>
-    <p style="max-width: 800px; margin: auto; text-align: center;">
-      Voilà plus de 15 ans que j’accompagne des jeunes dans leurs difficultés :
-      orientation, complexes, perte d’estime de soi, harcèlement, relations
-      familiales… Mon objectif est de vous donner les clés vers un nouvel
-      équilibre, pour que vous (ou votre adolescent) repreniez confiance en vous
-      et utilisiez vos potentiels.
-    </p>
+    <!-- Illustration à gauche, texte à droite -->
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-top: 2rem;">
+      <img
+        src="assets/illustration.jpg"
+        alt="Illustration d’un coach guidant un adolescent"
+        style="max-width:100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+      />
+      <p style="flex: 1; font-size: 1rem; line-height: 1.6; max-width: 600px;">
+        Voilà plus de 15 ans que j’accompagne des jeunes dans leurs difficultés :
+        orientation, complexes, perte d’estime de soi, harcèlement, relations familiales…
+        Mon objectif est de vous donner les clés vers un nouvel équilibre, pour que vous
+        (ou votre adolescent) repreniez confiance en vous et utilisiez vos potentiels.
+      </p>
+    </div>
   </section>
 
   <!-- ===== “Le sourire” (blog post) ===== -->
   <section id="sourire" class="sourire">
     <h2>Le sourire</h2>
     <p>
-      Retrouver votre sourire et celui de votre enfant, trouver la force de vivre
-      la vie de façon positive, se donner les moyens de donner à notre vie les
-      couleurs du bonheur. Ce n’est pas une utopie et mon travail est de vous
-      aider à trouver le chemin vers l’avenir qui vous permettra de vous
-      épanouir personnellement. Les séances se placent sous le signe de
-      l’écoute et de la bienveillance pour repartir avec une note positive et
-      constructive.
+      Retrouver votre sourire et celui de votre enfant, trouver la force de vivre la vie
+      de façon positive, se donner les moyens de donner à notre vie les couleurs du
+      bonheur. Ce n’est pas une utopie et mon travail est de vous aider à trouver le chemin
+      vers l’avenir qui vous permettra de vous épanouir personnellement. Les séances se
+      placent sous le signe de l’écoute et de la bienveillance pour repartir avec une note
+      positive et constructive.
       <br /><br />
       <em>Publié le 20 mai 2025</em>
     </p>
   </section>
 
-  <!-- ===== “Témoignages” ===== -->
+  <!-- ===== “Témoignages” (défilement gauche→droite) ===== -->
   <section id="temoignages" class="temoignages">
     <h2>Témoignages</h2>
-    <p>
-      « Avant de vous rencontrer madame Micand, j’étais dans une période assez
-      compliquée avec moi-même. Je n’avais pas du tout confiance en moi, j’étais
-      très timide et je n’osais pas aller vers les autres. Grâce aux nombreux
-      projets et conseils que vous m’avez apportés j’ai pu acquérir ma confiance
-      en moi et maintenant tout va mieux, je n’ai plus de problèmes à parler avec
-      des inconnus, je peux passer des appels téléphoniques sans problème alors
-      qu’avant c’était de vraies épreuves pour moi. Vous m’avez débloqué
-      quelque chose en moi par votre bienveillance que je ne saurais expliquer […] »
-      <br /><strong>- Justine C -</strong>
-    </p>
-    <p>
-      « Merci beaucoup pour tout, car vous m’avez énormément encouragée et c’est
-      ce qui m’a donné la force pour tout ça. »
-      <br /><strong>- Sarah L -</strong>
-    </p>
-    <p style="text-align: right; font-size: 0.9rem;">
+    <div class="temoignages-container">
+      <div class="temoignages-marquee">
+        <div class="temoignage-item">
+          <p>
+            « Avant de vous rencontrer madame Micand, j’étais dans une période assez
+            compliquée avec moi-même. Je n’avais pas du tout confiance en moi, j’étais
+            très timide et je n’osais pas aller vers les autres. Grâce aux nombreux
+            projets et conseils que vous m’avez apportés j’ai pu acquérir ma confiance
+            en moi et maintenant tout va mieux, je n’ai plus de problèmes à parler avec
+            des inconnus, je peux passer des appels téléphoniques sans problème alors
+            qu’avant c’était de vraies épreuves pour moi. Vous m’avez débloqué quelque
+            chose en moi par votre bienveillance que je ne saurais expliquer […] »
+            <br /><strong>- Justine C -</strong>
+          </p>
+        </div>
+        <div class="temoignage-item">
+          <p>
+            « Merci beaucoup pour tout, car vous m’avez énormément encouragée et c’est
+            ce qui m’a donné la force pour tout ça. »
+            <br /><strong>- Sarah L -</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: right; font-size: 0.9rem; margin-top: 1rem;">
       <em>Publié le 13 mai 2025</em>
     </p>
   </section>
@@ -97,32 +135,28 @@
   <section id="adolescence" class="adolescence">
     <h2>Spécialiste de l’adolescence</h2>
     <p>
-      L’adolescence est un temps de construction de soi et de sa vie d’adulte en
-      devenir. Les choix sont nombreux et la pression est parfois difficile à
-      soutenir (orientation, complexes, perte d’estime de soi, harcèlement,
-      relations familiales…).<br /><br />
-      Voilà plus de 15 ans que j’accompagne des jeunes dans leurs difficultés en
-      leur donnant les clés vers un nouvel équilibre, pour qu’ils reprennent
-      confiance en eux et utilisent leurs potentiels. Je m’engage à vous
-      accompagner jusqu’au bout dans la voie qui vous permettra de retrouver
-      vos marques.
+      L’adolescence est un temps de construction de soi et de sa vie d’adulte en devenir.
+      Les choix sont nombreux et la pression est parfois difficile à soutenir (orientation,
+      complexes, perte d’estime de soi, harcèlement, relations familiales…).<br /><br />
+      Voilà plus de 15 ans que j’accompagne des jeunes dans leurs difficultés en leur
+      donnant les clés vers un nouvel équilibre, pour qu’ils reprennent confiance en eux
+      et utilisent leurs potentiels. Je m’engage à vous accompagner jusqu’au bout dans la
+      voie qui vous permettra de retrouver vos marques.
       <br /><br />
       <em>Publié le 13 mai 2025</em>
     </p>
   </section>
 
-  <!-- ===== COORDONNÉES DE CONTACT (en page d’accueil pour garder visible) ===== -->
+  <!-- ===== COORDONNÉES DE CONTACT ===== -->
   <section id="contact" class="contact-info">
     <h2>Coordonnées de contact</h2>
     <p>
       <strong>Mail :</strong>
-      <a href="mailto:somicoachdevie@gmail.com">
-        somicoachdevie@gmail.com
-      </a>
+      <a href="mailto:somicoachdevie@gmail.com">somicoachdevie@gmail.com</a>
     </p>
     <p>
       <strong>Téléphone :</strong>
-      07-43-28-18-25
+      07 43 28 18 25
     </p>
     <p>
       <strong>Facebook :</strong>
@@ -140,7 +174,7 @@
     <p>
       © 2025 – Sophie Micand •
       <a href="mailto:somicoachdevie@gmail.com">somicoachdevie@gmail.com</a> •
-      07-43-28-18-25 •
+      07 43 28 18 25 •
       <a
         href="https://www.facebook.com/people/Sophie-Micand/pfbid0jmBnsoo59hCQt9dGwsAkJjXqfNPzJmEMTVNQS24K5Ck3XB5UchnBejtRaS2TP4wbl/"
         target="_blank"
