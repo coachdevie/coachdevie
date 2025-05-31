@@ -62,7 +62,7 @@ body {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url('../assets/hero.jpg'); /* remplace par ton fichier */
+  background-image: url('../assets/feuille.jpg'); 
   background-size: cover;
   background-position: center;
   display: flex;
