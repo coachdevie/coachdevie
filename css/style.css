@@ -116,12 +116,12 @@ body {
 }
 
 /* ===== Sections Générales ===== */
-.section {
+.section, section{
   padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
-.section h2 {
+.section h2, section h2 {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   margin-bottom: 1.5rem;
   text-align: center;
