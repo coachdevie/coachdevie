@@ -2,10 +2,10 @@
    Variables globales (tu peux adapter)
    ============================ */
 :root {
-  --color-primary: #ff6900; /* accent-2 du preset WordPress */
+  --color-primary: #040e44;
   --color-secondary: #111111;
   --color-light: #ffffff;
-  --color-grey: #fcb900; /* accent-1 */
+  --color-grey: #89acff;
   --font-base: 'Inter', sans-serif;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 /* ===== Sections Générales ===== */
-.section, section{
+.section {
   padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
@@ -153,7 +153,7 @@ body {
 .temoignages-marquee {
   display: flex;
   gap: 4rem;
-  animation: scrollRight 45s linear infinite;
+  animation: scrollRight 60s linear infinite;
   animation-play-state: running;
 }
 .temoignage-item {
