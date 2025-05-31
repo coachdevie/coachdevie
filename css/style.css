@@ -2,10 +2,10 @@
    Variables globales (tu peux adapter)
    ============================ */
 :root {
-  --color-primary: #ff4081;
-  --color-secondary: #222;
-  --color-light: #fff;
-  --color-grey: #f5f5f5;
+  --color-primary: #ff6900; /* accent-2 du preset WordPress */
+  --color-secondary: #111111;
+  --color-light: #ffffff;
+  --color-grey: #fcb900; /* accent-1 */
   --font-base: 'Inter', sans-serif;
 }
 
@@ -17,7 +17,7 @@
 }
 body {
   font-family: var(--font-base);
-  background: var(--color-grey);
+  background: #FBFAF3; /* accent-5 clair */
   color: var(--color-secondary);
   line-height: 1.6;
 }
@@ -62,7 +62,7 @@ body {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url('../assets/feuille.jpg'); 
+  background-image: url('../assets/feuille.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -115,63 +115,73 @@ body {
   background: var(--color-grey);
 }
 
-/* ===== Services ===== */
-.services {
-  padding: 4rem 2rem;
+/* ===== Sections Générales ===== */
+.section {
+  padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
-  text-align: center;
 }
-.services h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  margin-bottom: 2rem;
-}
-.services-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-.card {
-  background: var(--color-light);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-.card .icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ===== About ===== */
-.about {
-  background: var(--color-light);
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.about h2 {
+.section h2 {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
-.about p {
-  max-width: 700px;
+
+/* ===== “Le sourire” ===== */
+.sourire {
+  background: var(--color-light);
+  padding: 3rem 2rem;
+}
+.sourire p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
   margin: auto;
-  font-size: 1rem;
 }
 
-/* ===== CTA ===== */
-.cta {
-  background: linear-gradient(135deg, #fcb900 0%, #ff6900 100%);
-  color: var(--color-light);
+/* ===== “Témoignages” ===== */
+.temoignages {
+  background: var(--color-light);
+  padding: 3rem 2rem;
+}
+.temoignages p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ===== “Spécialiste de l’adolescence” ===== */
+.adolescence {
+  background: var(--color-grey);
+  padding: 3rem 2rem;
+}
+.adolescence p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ===== Contact / Coordonnées ===== */
+.contact-info {
+  background: var(--color-light);
   padding: 3rem 2rem;
   text-align: center;
 }
-.cta h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-  margin-bottom: 1rem;
-}
-.cta p {
+.contact-info p,
+.contact-info a {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.contact-info a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* ===== Footer ===== */
