@@ -139,18 +139,40 @@ body {
   margin: auto;
 }
 
-/* ===== “Témoignages” ===== */
+/* ===== “Témoignages” défilant ===== */
 .temoignages {
   background: var(--color-light);
+  position: relative;
+  overflow: hidden;
   padding: 3rem 2rem;
 }
-.temoignages p {
+.temoignages-container {
+  width: 100%;
+  overflow: hidden;
+}
+.temoignages-marquee {
+  display: flex;
+  gap: 4rem;
+  animation: scrollRight 15s linear infinite;
+}
+.temoignage-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.temoignage-item p {
   font-size: 1rem;
-  max-width: 800px;
-  margin: auto 0;
-  margin-bottom: 1.5rem;
+  margin: 0;
   line-height: 1.5;
   font-style: italic;
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* ===== “Spécialiste de l’adolescence” ===== */
