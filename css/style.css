@@ -1,11 +1,8 @@
-/* ============================
-   Variables globales (tu peux adapter)
-   ============================ */
 :root {
   --color-primary: #040e44;
   --color-secondary: #111111;
   --color-light: #ffffff;
-  --color-grey: #89acff;
+  --color-grey: #e8e8e8;
   --font-base: 'Inter', sans-serif;
 }
 
@@ -141,6 +138,10 @@ body {
   line-height: 1.6;
   max-width: 800px;
   margin: auto;
+}
+
+.tarif {
+   text-align: center;
 }
 
 /* ===== “Témoignages” défilant ===== */
