@@ -62,7 +62,7 @@ body {
 .hero {
   position: relative;
   height: 70vh;
-  background-image: url('../assets/feuille.jpg');
+  background-image: url('../assets/photo arbre sable4.JPG');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -128,11 +128,11 @@ body {
 }
 
 /* ===== “Le sourire” ===== */
-.sourire {
+.sourire, .tarif {
   background: var(--color-light);
   padding: 3rem 2rem;
 }
-.sourire p {
+.sourire p, .tarif p {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 800px;
