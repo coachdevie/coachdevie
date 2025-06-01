@@ -115,6 +115,10 @@ body {
   background: var(--color-grey);
 }
 
+.services {
+   background: var(--color-grey);
+}
+
 /* ===== Sections Générales ===== */
 .section {
   padding: 3rem 2rem;
